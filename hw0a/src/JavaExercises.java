@@ -13,7 +13,17 @@ public class JavaExercises {
      */
     public static void starTriangle() {
         // TODO: Fill in this function
-    }
+        for(int i=0;i<5;i++){
+            for(int j=0;j<5-i-1;j++){
+                System.out.print(" ");
+            }
+            for(int k=0;k<i+1;k++){
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+        
+     }
 
     /**
      * Prints each character of a given string followed by its reverse index.
@@ -21,6 +31,10 @@ public class JavaExercises {
      */
     public static void printIndexed(String s) {
         // TODO: Fill in this function
+        for(int i=0;i<s.length();i++){
+            System.out.print(s.charAt(i));
+            System.out.print(s.length()-1-i);
+        }
     }
 
     /**
@@ -29,7 +43,12 @@ public class JavaExercises {
      */
     public static String stutter(String s) {
         // TODO: Fill in this function
-        return null;
+        String res="";
+        for(int i=0;i<s.length();i++){
+            res+=s.charAt(i);
+            res+=s.charAt(i);
+        }
+        return res;
     }
 
     /**
@@ -43,6 +62,18 @@ public class JavaExercises {
      */
     public static int quadrant(int x, int y) {
         // TODO: Fill in this function
+        if(x>0&&y>0){
+            return 1;
+        }
+        else if(x<0&&y>0){
+            return 2;
+        }
+        else if(x<0&&y<0){
+            return 3;
+        }
+        else if(x>0&&y<0){
+            return 4;
+        }
         return 0;
     }
 
