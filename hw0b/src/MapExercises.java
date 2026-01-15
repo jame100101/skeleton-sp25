@@ -1,6 +1,6 @@
 import java.util.List;
 import java.util.Map;
-
+import java.util.HashMap;
 public class MapExercises {
     /** Returns a map from every lower case letter to the number corresponding to that letter, where 'a' is
      * 1, 'b' is 2, 'c' is 3, ..., 'z' is 26.

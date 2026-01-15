@@ -1,5 +1,5 @@
 import java.util.List;
-
+import java.util.ArrayList;
 public class ListExercises {
 
     /** Returns the total sum in a list of integers */
@@ -15,25 +15,25 @@ public class ListExercises {
     /** Returns a list containing the even numbers of the given list */
     public static List<Integer> evens(List<Integer> L) {
         // TODO: Fill in this function.
-        for(int i=0;i<L.size();i++){
-            if(L.get(i)%2==1){
-                L.remove(i);
-                i--;
+        List<Integer>res=new ArrayList<>();
+        for(int x:L){
+            if(x%2==0){
+                res.add(x);
             }
         }
-        return L;
+        return res;
     }
 
     /** Returns a list containing the common item of the two given lists */
     public static List<Integer> common(List<Integer> L1, List<Integer> L2) {
         // TODO: Fill in this function.
-        for(int i=0;i<L1.size();i++){
-            if(!L2.contains(L1.get(i))){
-                L1.remove(i);
-                i--;
+        List<Integer> res=new ArrayList<>();
+        for(int x:L1){
+            if(L2.contains(x)){
+                res.add(x);
             }
         }
-        return L1;
+        return res;
     }
 
 
