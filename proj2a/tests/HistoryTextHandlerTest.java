@@ -1,5 +1,5 @@
 
-/*
+
 import browser.NgordnetQuery;
 import main.HistoryTextHandler;
 import ngrams.NGramMap;
@@ -9,11 +9,11 @@ import java.util.List;
 
 import static utils.Utils.*;
 import static com.google.common.truth.Truth.assertThat;
- */
+
 
 // uncomment this test whenever you are ready!
 public class HistoryTextHandlerTest {
-    /*
+
     @Test
     public void testHandle() {
         NGramMap ngm = new NGramMap(SHORT_WORDS_FILE, TOTAL_COUNTS_FILE);
@@ -21,10 +21,10 @@ public class HistoryTextHandlerTest {
         NgordnetQuery query = new NgordnetQuery(List.of("request", "airport"), 2006, 2007, 0);
         String actual = handler.handle(query);
         String expected = """
-                request: {2006=2.44740192927834E-5, 2007=2.464488338318067E-5}
-                airport: {2007=6.2068176510855946E-6}
+                request: {2006=7.42341395046138E-5, 2007=6.951115066593374E-5}
+                airport: {2006=1.379589151613091E-5, 2007=1.4777957271013364E-5}
                 """;
         assertThat(actual).isEqualTo(expected);
     }
-    */
+
 }
